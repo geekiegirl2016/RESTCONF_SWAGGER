@@ -1,0 +1,64 @@
+{
+  "network": [
+    {
+      "name": "string",
+      "obj-Mode-config-network-group": {
+        "network_address": {
+          "ipv4_addr": "string",
+          "ipv4_mask": "string"
+        },
+        "description": "string",
+        "group-objects": {
+          "network-group": "string"
+        },
+        "group-object": "string",
+        "host": {
+          "ipv4-host": "string"
+        },
+        "addr-ranges": {
+          "addr-range-start": "string",
+          "addr-range-end": "string"
+        },
+        "range": {
+          "ip-addr-min": "string",
+          "ip-addr-max": "string"
+        }
+      }
+    }
+  ]
+}
+
+
+curl -X 'PUT' \
+  'https://localhost:8443/restconf/proxy/https://1.1.1.1:443/restconf/data/Cisco-IOS-XE-native:native/object-group/Cisco-IOS-XE-object-group:network' \
+  -H 'accept: application/yang-data+json' \
+  -H 'Content-Type: application/yang-data+json' \
+  -d '{
+  "network": [
+    {
+      "name": "string",
+      "obj-Mode-config-network-group": {
+        "network_address": {
+          "ipv4_addr": "string",
+          "ipv4_mask": "string"
+        },
+        "description": "string",
+        "group-objects": {
+          "network-group": "string"
+        },
+        "group-object": "string",
+        "host": {
+          "ipv4-host": "string"
+        },
+        "addr-ranges": {
+          "addr-range-start": "string",
+          "addr-range-end": "string"
+        },
+        "range": {
+          "ip-addr-min": "string",
+          "ip-addr-max": "string"
+        }
+      }
+    }
+  ]
+}'
